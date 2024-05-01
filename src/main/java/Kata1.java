@@ -47,9 +47,26 @@ public class Kata1 {
             return (double) sum/input.length;
         }
     }
+    // sum ascii values
+    //Your method must take a String and calculate the sum total of ASCII values for the String. Assume that
+    // your String will only include the 52 uppercase/lowercase letters and digits 0-9.
+    // input = string
+    // output = int
 
+    public int sumAscii(String str) {
 
+        //could filter / replace characters in the string that are not desired.
 
+        //initiate a value to hold the sum
+        int sum = 0;
+        // iterate through the string as a char array
+        for (char ch : str.toCharArray()) {
+            // add ascii values to the sum
+            sum += (int) ch;
+        }
+        // return sum
+        return sum;
+    }
 
 
 
