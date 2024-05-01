@@ -27,4 +27,37 @@ public class Kata1 {
         return total - (highest + lowest);
         }
     }
+
+
+
+    // function to calculate mean
+    //input -- int []
+    //output -- int
+    public double calcMean(int[] input){
+        ///sum of all numbers in aee/ nr
+
+        if(input.length<1){
+            return 0;
+        }else {
+            //declare a sum,
+            int sum =0;
+            for(int num: input){
+                sum += num;
+            }
+            return (double) sum/input.length;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -2,7 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 
- class kata1Test { Kata1 kata1 = new Kata1();
+ class kata1Test {
+     Kata1 kata1 = new Kata1();
     @Test
         void testSumArray() {
 
@@ -14,5 +15,11 @@ import org.junit.jupiter.api.Test;
             assertEquals(3, kata1.sumArray(new int[]{1, 2, 87, -4}));
         });
 
+     }
+
+     @Test
+     void testcalcMean(){
+        assertEquals(0.0,kata1.calcMean(new int[]{}));
+         assertEquals(2.5,kata1.calcMean(new int[]{1,2,3,4}));
      }
  }
